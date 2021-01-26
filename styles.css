@@ -1,0 +1,390 @@
+body {
+  font-family: "Alata";
+  font-size: 15px;
+  color: hsl(0, 0%, 0%);
+}
+
+.layout {
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.section-title {
+  font-weight: 400;
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.title{
+  text-transform: uppercase;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+
+/* TOP PAGE SECTION*/
+#top-page {
+  background-image: url(images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 10%;
+}
+
+.slogan {
+  border-style: solid;
+  text-align: left;
+  font-size: 4rem;
+  margin-top: 150px;
+  padding: 1rem;
+  color: #fff;
+  width: 40rem;
+  z-index: 1;
+}
+
+.brand {
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: white !important;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-link:hover:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid;
+  width: 50%;
+  bottom: 0;
+  height: 1px;
+  display: block;
+  left: 25%;
+}
+
+/* COMPANY SECTION */
+#company {
+  margin: 10rem 0 15rem 0;
+}
+
+.image-company {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: auto;
+}
+
+.company-description {
+  width: 35rem;
+  background-color: #fff;
+  margin-top: 8rem;
+  padding: 5rem 0 0 5rem;
+  float: right;
+}
+
+.description-text {
+  color: hsl(0, 0%, 55%);
+  line-height: 1.5;
+}
+
+/* CREATION SECTION */
+#creations {
+  margin: 55rem 0 5rem 0;
+}
+
+.btn-mobile{
+  visibility: hidden;
+}
+
+.btn-desktop{
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: 2rem;
+}
+
+.creation-title{
+  display: inline-block;
+}
+
+
+.image-title {
+  position: relative;
+  text-align: left;
+  bottom: 20%;
+  left: 15%;
+  font-size: 150%;
+  color: #fff;
+  width: 50%;
+}
+
+.vignette:hover>.image-creation {
+  opacity: 0.5;
+}
+
+.vignette:hover>.image-title {
+  color: black;
+}
+
+.deep-earth2 {
+  display: none;
+}
+
+.night-arcade2 {
+  display: none;
+}
+
+.soccer-team2 {
+  display: none;
+}
+
+.grid2 {
+  display: none;
+}
+
+.from-above2 {
+  display: none;
+}
+
+.borealis2 {
+  display: none;
+}
+
+.curiosity2 {
+  display: none;
+}
+
+.fisheye2 {
+  display: none;
+}
+
+/* FOOTER SECTION */
+#footer {
+  background-color: hsl(0, 0%, 0%);
+  color: white;
+}
+
+.footer {
+  padding-top: 5rem;
+}
+
+.logo {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 200%;
+}
+
+.navbar-footer {
+  margin-left: -0.6rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 80%
+}
+
+.icon-sns {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  float: right;
+  color: white !important;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.icon-sns:hover:before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid;
+  width: 50%;
+  bottom: 0;
+  height: 1px;
+  display: block;
+  left: 25%;
+}
+
+.copyright {
+  padding-top: 2rem;
+  font-size: 80%;
+  color: hsl(0, 0%, 41%);
+  text-align: right;
+}
+
+
+/* MOBILE VERSION */
+@media(max-width: 991px) {
+  body {
+    text-align: center;
+  }
+
+  .layout{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+  }
+
+/* TOP SECTION mobile */
+  .slogan {
+    width: 90%;
+    height: auto;
+    font-size: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* COMPANY SECTION mobile */
+
+  .image-company {
+    position: static;
+    width: 90%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .company-description {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 0;
+    float: none;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* CREATION SECTION mobile */
+
+  #creations {
+    margin-top: -7rem;
+  }
+
+  .vignette{
+    margin-left: auto;
+    margin-right: auto;
+    height: 13rem;
+  }
+
+  .image-title {
+    width: 30%;
+    height: auto;
+    font-size: 60%
+    left: 5;
+    bottom: 40%;
+  }
+
+  .btn-desktop{
+    visibility: hidden;
+  }
+
+  .btn-mobile{
+    visibility: visible;
+    margin: 4rem auto;
+  }
+
+  .deep-earth1 {
+    display: none;
+  }
+
+  .deep-earth2 {
+    display: block;
+  }
+
+  .night-arcade1 {
+    display: none;
+  }
+
+  .soccer-team1 {
+    display: none;
+  }
+
+  .grid1 {
+    display: none;
+  }
+
+  .from-above1 {
+    display: none;
+  }
+
+  .borealis1 {
+    display: none;
+  }
+
+  .curiosity1 {
+    display: none;
+  }
+
+  .fisheye1 {
+    display: none;
+  }
+
+  .night-arcade2 {
+    display: block;
+  }
+
+  .soccer-team2 {
+    display: block;
+  }
+
+  .grid2 {
+    display: block;
+  }
+
+  .from-above2 {
+    display: block;
+  }
+
+  .borealis2 {
+    display: block;
+  }
+
+  .curiosity2 {
+    display: block;
+  }
+
+  .fisheye2 {
+    display: block;
+  }
+
+  .btn {
+    display: inline-block;
+    position: relative;
+    display: none;
+    float: none;
+  }
+
+  /* FOOTER SECTION mobile */
+
+  .navbar-footer-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .icon-sns {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
