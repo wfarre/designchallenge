@@ -118,9 +118,9 @@ body {
   text-align: left;
   bottom: 20%;
   left: 15%;
-  font-size: 150%;
+  font-size: 2vw;
   color: #fff;
-  width: 50%;
+  width: 60%;
 }
 
 .vignette:hover>.image-creation {
@@ -229,11 +229,16 @@ body {
     height: auto;
   }
 
+  .section-title{
+    font-size: 10vw;
+    margin-bottom: 0;
+  }
+
 /* TOP SECTION mobile */
   .slogan {
     width: 90%;
     height: auto;
-    font-size: 3rem;
+    font-size: 10vw;
     margin-left: auto;
     margin-right: auto;
   }
@@ -273,9 +278,9 @@ body {
   .image-title {
     width: 30%;
     height: auto;
-    font-size: 60%
+    font-size: 4vw;
     left: 5;
-    bottom: 40%;
+    bottom: 12vw;
   }
 
   .btn-desktop{
@@ -377,6 +382,20 @@ body {
   }
 
 
+
+}
+
+
+/* VERY SMALL DEVICE */
+@query(max-width: 414px){
+
+.slogan {
+  width: 80%;
+  height: auto;
+  font-size: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 
 .attribution {
